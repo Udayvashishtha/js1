@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        // string are inmutabe means it can not be change 
+
+        //strings and their method
+
+        let msg="hello buddy  ";
+        
+        let a=msg.trim();    // remove the space from string 
+        console.log(a);
+       
+        let b=msg.indexOf("hello")// gives the start index of word as an number
+        console.log(b);
+
+        let c=msg.toUpperCase();
+        console.log(c);
+
+        let d=msg.toLowerCase();
+        console.log(d);
+
+       let e=msg.slice(4);  // cut the string from 4 index
+       console.log(e);
+
+       let f=msg.slice(1,10); // first index involve not last index involve
+       console.log(f);
+
+       let g=msg.slice(-10); // (fulllenght - 10index)
+       console.log(g);
+
+       let h=msg.replace("buddy","friends");//replace the word
+       console.log(h);
+
+       let i=msg.repeat(5);// repeat the word as its number
+       console.log(i)
+
+
+
+
+
+    </script>
+</body>
+</html>
