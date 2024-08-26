@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        // Array is collection of similar type of element and array is an object in js 
+        // Array are changeable 
+        // Array methods
+
+
+        let z=[1,2,3,4,5];
+
+
+       z.push(8)
+        console.log(z);  // element add at end
+
+        z.pop();
+        console.log(z);  // element delete from end
+
+       z.shift();// element remove from first
+        console.log(z);
+
+        z.unshift(56); // add element to first
+        console.log(z);
+
+        let e=z.indexOf(4); // gives the index of element 4
+        console.log(e); // gives us 3
+
+        let f=z.includes(5); // element is present in array or not 
+        console.log(f);
+
+        let g=z.sort(); // sort the array 
+        console.log(g);
+
+
+     let ab=[1,2,3]
+     let ac=[1,2,3]
+
+      //ac===ab
+      // value is false beacuse of array referencesing
+
+      let ad=ab;// create a copy of array ab
+      //ad===ab
+      // value is true beacuse of array  referencesing
+
+
+
+
+    </script>
+</body>
+</html>
