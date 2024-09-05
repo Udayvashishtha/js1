@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // OBJECT
+
+        // Object is collection of key and value pair 
+        // key will not be in double quote
+        // objective of object is to collect the properties
+
+        const a={
+            name:"uday",
+            age:19,
+            gender:"male",
+        }
+
+        console.log(a);
+
+        console.log(a.name); // how to access a element 
+
+        a.name="vasu";
+        console.log(a.name);// way to change the name key
+
+        delete a.age;
+        console.log(a); // way to delete the age from a object
+
+    
+
+        // OBJECT OF OBJECT
+
+        const b={
+            a:{
+            name :"uday",
+            age :16,
+            },
+
+            b:{
+                name :"vasu",
+                age:19.,
+            },
+        }
+
+        console.log(b)
+
+        let n=b.a.name   // way to access
+        console.log(n);
+
+        let v=delete b.b.name // way to delete
+        console.log(b);
+
+
+        // ARRAY OF OBJECT
+        
+        const c=[
+            {
+             name:"uday",
+             age:15,
+            },
+            {
+                name:"vasu",
+                age:18,
+            }
+        ]
+
+
+        console.log(c[0].name)// here is to access the element of object
+
+        // some math function
+
+        console.log(Math.abs(-12));
+
+        console.log(Math.pow(2,5))
+
+        console.log(Math.floor(12.44))
+
+        console.log(Math.ceil(12.99))
+
+        console.log(Math.random())
+
+        console.log(Math.PI)
+
+        console.log(Math.E)
+
+        let k= Math.floor(Math.random() *10)+1;
+
+        console.log(k)
+
+    </script>
+</body>
+</html>
