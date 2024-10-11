@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+
+        const a={
+            name:"buddy",
+            age:14,
+            marks:[1,2,4,5,6],
+            getname(){
+                console.log(`${this.name} has a age of ${this.age}`);
+            }
+        };
+
+        console.log(a)
+
+
+        // try and catch block
+
+        //let b=4;
+        try{
+          console.log(b);
+        }catch{
+               console.log("b is not defined")
+        }
+
+       // Arrow function 
+
+       const fun=(a,b)=>{
+           return a*b;
+       };
+       
+       console.log(fun(2,3))
+
+       // arrow function with implict return
+
+       const fun1=(a,b)=>(
+               a*b
+       );
+
+       console.log(fun1(2,3))
+
+
+       // settimeout(callback function , timeout)
+
+      
+      setTimeout(()=>{
+        console.log("hello")
+      },4000);
+
+      let h1=setInterval(()=>{
+        console.log("hello fun");
+      },4000);
+
+      clearInterval(h1)
+       
+    </SCript>
+</body>
+</html>

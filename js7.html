@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Array methods
+          
+        let a=[1,2,3,4,5];
+
+        // for each
+        a.forEach((i)=>{
+            console.log(i)
+        })
+  
+        // map method and its also return and array
+        
+        a.map((el)=>{
+            console.log(el)
+        })
+
+        //filter
+
+        let b=a.filter((el)=>{
+            return el%2==0;
+        })
+         
+        console.log(b);
+
+
+        // reduce method
+
+        let c=a.reduce((el,res)=>{
+            return el+res;
+        })
+
+        console.log(c);
+
+
+        //  Every method , its a method which gives you true false and every work as if it satisfy all condition then  it will return true otherwise false
+
+        u=[1,2,3,4]
+
+        let d=u.reduce((el)=> el%2==0);
+
+        console.log(d);
+
+          //  sum method , its a method which gives you true false and some  work as if it satisfy condition it will return true otherwise false
+      
+
+       let e=a.some((el)=>el%2==0)
+
+       console.log(e);
+       
+       let ab=[1,2,3,4];
+       let ac=[5,6,7,8];
+
+       let collect=[...ab,...ac];
+       console.log(collect);
+
+
+
+       // rest operator used 
+       function fun(...rest){
+            let sum=0;
+        for(let i of rest){
+             sum=i+sum;
+        }
+        return sum;
+       }
+
+       console.log(fun(1,2,3,4,5))
+
+     //  destructing in js
+       
+     let array=[1,2,3,4,5,6];
+
+     let [av,ah]=array;
+     console.log(av,ah)
+
+     
+     let arrayob={
+         name:"uday",
+         age:15,
+      };
+
+      let {name:user,age}=arrayob;  // destruing of object and rename a variable 
+
+      //console.log(name, age);
+
+      console.log(user, age);
+     
+     </script>
+</body>
+</html>

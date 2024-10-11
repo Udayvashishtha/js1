@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .uday{
+            background-color: yellowgreen;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h1">Hello buddy,Welcome to the javascript</h1>
+    <h2 id="hh">Hello buddy,Welcome to the javascript</h2>
+    
+    <script>
+
+        
+        // accessing the element of page
+
+        let h1=document.getElementById("h1");
+
+        h1.style.color="blue";
+
+
+         let ab=h1.innerText="hello go"; //markup is also shown
+     
+         let ac=h1.innerHTML="<h2> hello world</h2>"; // markup is not shown but hidden element is shown in it
+
+          let ad=h1.textContent="hello";  // markup also show in file
+     
+       // maipulate attribute
+
+       let ghost=document.getElementById("hh");
+
+        ghost.style.color="red";
+        
+        let gh=ghost.getAttribute("id");
+
+        ghost.setAttribute("id","uday")   // setattribute only set one class at a time
+      
+
+        // classlist
+
+       ghost.classList.add("uday");
+
+       h1.classList.add("uday");
+
+       ghost.classList.remove("uday");
+
+       h1.classList.contains("uday")
+
+       // Adding element in html file
+
+     let us=document.createElement("h5");
+
+     let add1=document.createElement("p");
+
+     let add2=document.createElement("h2");
+
+</script>
+</body>
+</html>
